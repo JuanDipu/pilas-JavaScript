@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pilas</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  class Pila {
+    constructor() {
+      this.pila = []
+    }
+    push(elemento) {
+      this.pila.push(elemento)
+      return this.pila
+    }
+    pop() {
+      return this.pila.pop()
+    }
+    peek() {
+      return this.pila[this.pila.length - 1]
+    }
+    size() {
+      return this.pila.length
+    }
+    print() {
+      console.log(this.pila);
+    }
+  }
+  const pila = new Pila()
+  console.log(pila.size());
+  pila.push("Juan")
+  pila.push("Camilo")
+  pila.print()
+  console.log(pila.size());
+  console.log(pila.peek());
+  pila.push("Andres")
+  pila.print()
+  console.log(pila.size());
+  pila.pop()
+  pila.print()
+
+
+
+
+</script>
+
+</html>
